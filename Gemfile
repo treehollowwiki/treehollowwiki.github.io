@@ -1,4 +1,4 @@
-source 'http://mirrors.aliyun.com/rubygems/'
+source 'https://gems.ruby-china.com/'
 
 gem "jekyll-avatar"
 gem "jekyll-coffeescript"
@@ -17,3 +17,4 @@ gem "jekyll-sitemap"
 gem "jekyll-titles-from-headings"
 gem "jemoji"
 gem "jekyll-gitlab-metadata"
+gem "kramdown-parser-gfm"

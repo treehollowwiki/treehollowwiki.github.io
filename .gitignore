@@ -2,4 +2,4 @@ _site
 Gemfile.*.lock
 .sass-cache
 .jekyll-cache
-#Gemfile
+Gemfile

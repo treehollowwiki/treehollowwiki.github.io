@@ -1,5 +1,5 @@
 # (string) Title of your wiki
-title: 抒发森林wiki
+title: 抒发森林Wiki
 # (string) Description of your wiki
 description: 
 # (boolean) disable edit functionalities (edit/delete/add pages)
@@ -15,6 +15,7 @@ show_wiki_posts: true
 # (integer) Maximum number of wiki posts to shown in sidebar
 show_wiki_posts_limit: 10
 # from jekyll (read jekyll doc)
+favicon: assets/images/favicon.ico
 paginate: 5
 paginate_path: "/assets/blog/page:num"
 permalink: "/assets/blog/posts/:year/:month/:day/:title:output_ext"
@@ -23,7 +24,7 @@ show_downloads: true
 # (string) Specify branch rendered by gitpages allowing wiki tool buttons to work
 git_branch: "master"
 # (string) Url of logo image, it can be full, absolute or relative.
-logo_url: 
+logo_url: "../assets/images/treehollow_logo.png"
 # (string) The UA-XXXXX-Y code from google analytic to enable GA on your wiki
 google_analytics: 
 # (string) folder where wiki pages are stored, it's needed for tool buttons
@@ -33,7 +34,7 @@ wiki_folder: "wiki"
 use_github_wiki: false
 # (boolean) Enable "Edit with Prose.io" button in tools, it's a 3rd party
 # service to edit github markdown pages easily
-use_prose_io: true
+use_prose_io: false
 # Select search_engine component from:
 # - js: it uses a built in javascript component that uses generated js object
 # - js_rss: it uses a built in javascript component that uses generated  sitemap_full.xml to search inside your wiki with lunr library (slow and experimental)
