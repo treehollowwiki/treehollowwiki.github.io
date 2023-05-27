@@ -50,6 +50,12 @@ google_cse_token:
 # If you have _config.yml and your site in a subfolder, then change this config accordly 
 site_root: 
 
+# Disqus Comments
+disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: treehollow-wiki
+
 #
 # Jekyll configurations
 #

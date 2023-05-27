@@ -1,5 +1,6 @@
 ---
 layout: git-wiki-default
+comments: true
 ---
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
@@ -12,4 +13,8 @@ layout: git-wiki-default
 
 {% if page.tags.size > 0 %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
 {% endif %}
