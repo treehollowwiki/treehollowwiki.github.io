@@ -1,0 +1,372 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #fbfbfb"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>抒发森林Wiki</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="A personal blog"
+  />
+  <meta name="author" content="抒发森林Wiki" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://treehollow.wiki/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://treehollow.wiki/theme.svg" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://treehollow.wiki/github.svg" />
+  
+  
+
+  
+  
+
+  
+  
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://treehollow.wiki/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://treehollow.wiki/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.121.2">
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="">
+<meta itemprop="description" content="">
+  
+  <meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://treehollow.wiki/" />
+
+
+  
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+
+  
+  
+  <link
+    rel="alternate"
+    type="application/rss&#43;xml"
+    href="https://treehollow.wiki/index.xml"
+    title="抒发森林Wiki"
+  />
+  
+  
+  <link rel="canonical" href="https://treehollow.wiki/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://treehollow.wiki"
+      >抒发森林Wiki</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#fbfbfb'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >主页</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >旧贴</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >关于</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/treehollowwiki"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+  <main aria-role="main">
+    <header class="homepage-header">
+      <h1></h1>
+      
+    </header>
+    <div class="homepage-content">
+      
+      <p><img src="./logo.png" alt="抒发森林logo"></p>
+<h2 id="简介">简介</h2>
+<p><a href="https://web.archive.org/web/20220423043243/https://www.treehollow.net/">抒发森林（sylva）</a>曾是一款属于当代大学生的匿名社交论坛，用户可以在上面抒发情绪、参与热点讨论、寻求帮助等。作为一个与校园生活相关的平台，抒发森林在一定程度上提供了情感交流和心理支持的空间。然而，由于某些原因，抒发森林于2022年4月底停止运营。同年7月，抒发森林更名为共鸣（Comin），重新上线。不过，令人遗憾的是，Comin并未能继续长久运营，在8月中旬也停止运营。虽然抒发森林和Comin都已停止运营，但它们曾经在校园社交领域发挥了重要的作用，给我们留下了一段珍贵的记忆。</p>
+<h2 id="时间线">时间线</h2>
+<ul>
+<li>未知：吉大树洞与北大抒发森林团队合作，将吉大树洞数据迁移至树说，后又更名为抒发森林。</li>
+<li>2022年4月前：抒发森林诞生，并开启内测，仅有少数学校可使用。随着内测逐步完成，抒发森林部分帖子以截图方式被洞友搬运至百度贴吧等平台。</li>
+<li>2022年4月初：百花齐放，百家争鸣。</li>
+<li>2022年4月末：4月30日因为抒发森林中出现讨论某学生运动的帖子，treehollow.net被注册局停止了解析服务，访问开始出现异常（network error），部分用户无法访问，后来部分洞友可通过修改host进行正常访问，但好景不长，修改host后也无法访问，给treehollow管理员Alice的邮件也无法正常发送，被退回。Alice的原帖：
+<pre tabindex="0"><code>hello，大家好！几日不见，非常想念！
+我们目前被注册局停止了解析服务，大家不用慌，已经在申诉了，原因是有人讨论了某些学生运动，网信办给我们出示了举报者上传的截图资料，图片里的时间是三分钟前。
+我们一定加强后续的审核建设，保护我们，也保护大家。
+</code></pre></li>
+<li>2022年5月3日 00:36:抒发森林微信公众号发布产品升级公告，公告内容：
+<pre tabindex="0"><code>产品升级公告
+亲爱的各位 dz 们：
+为了向各位提供更加优质的产品体验，本团队目前正对 Sylva 抒发森林产品进行功能升级，修复现有漏洞并增设更多产品功能。期间我们将暂停用户的产品登录使用，为您造成的不便，敬请谅解。
+产品将于5月9日（周一）更新上线，具体时间以实际为准。届时请各位到应用商店或官网进行更新，完成后即可正常使用。在此再次感谢各位对 Sylva 抒发森林的信任与支持。
+抒发森林创业团队
+2022年5月2日
+</code></pre></li>
+<li>2022年7月中旬：Comin开始内测。</li>
+<li>2022年7月21日 14:00：抒发森林公众号推送文章：Comin，打造你的社交圈子，Comin正式上线。</li>
+<li>2022年8月中旬（时间点可能有误）：Comin再次无法访问。</li>
+<li>2023年夏，热心洞友的treehollow.club上线，但好景不长，一个月后再次无法访问。</li>
+</ul>
+<h2 id="功能和服务">功能和服务</h2>
+<ul>
+<li>
+<p>抒发森林（sylva）分为两大板块，全国树洞和各大学校树洞，全国树洞面向所有注册用户，用户可以匿名发送普通帖子（可附带图片）、投票贴、回复帖子、收藏帖子。当回复帖子时，第一个回复人昵称为Alice、第二个回复人昵称为Bob&hellip;&hellip;, 有较好的匿名性。各大学校树洞起初全面开放，但由于各大学校树洞过多，难于管理，限制为该学校用户达50人后开放，可像全国树洞一样发帖回帖等。</p>
+</li>
+<li>
+<p>共鸣（Comin）与抒发森林类似，同样可以像抒发森林一样发送普通帖子（可附带图片）、投票贴、回复帖子，但不同的是昵称是由用户自己命名的，而并非随着回复先后而改变。另外一个不同之处是Comin拥有更多的分区，例如：共鸣森林、灵异社、游戏策划、考研交流、感情、闲聊等。</p>
+</li>
+<li>
+<p>注册方式：抒发森林（sylva）和共鸣（Comin）都通过手机号码进行注册，但还需要使用校园邮箱或事上传学生证、校园卡等方式来完成身份认证。</p>
+</li>
+</ul>
+
+    </div>
+  </main>
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://treehollow.wiki">抒发森林Wiki</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+  
+  
+  <a title="Web Analytics" href="https://clicky.com/101440855"><img alt="Clicky"
+      src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+  <script async data-id="101440855" src="//static.getclicky.com/js"></script>
+
+</footer>
+
+  </body>
+</html>
