@@ -28,6 +28,7 @@
   {{ end }}
 
   <!-- CSS & JS -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   {{ $main := resources.Get "main.css" }}
   <!---->
   {{ $custom := resources.Get "custom.css" }}
