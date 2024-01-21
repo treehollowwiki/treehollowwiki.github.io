@@ -1,4 +1,4 @@
-baseURL = 'http://treehollow.wiki'
+baseURL = 'https://treehollowwiki.github.io'
 languageCode = 'en-us'
 title = '抒发森林Wiki'
 theme = "paper"
