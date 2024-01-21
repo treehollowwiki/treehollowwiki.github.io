@@ -1,0 +1,31 @@
+baseURL = 'https://treehollow.wiki'
+languageCode = 'en-us'
+title = '抒发森林Wiki'
+theme = "paper"
+
+
+sectionPagesMenu = 'main'
+[menus]
+[[menus.main]]
+    name = '主页'
+    pageRef = '/'
+    weight = 10
+[[menus.main]]
+    name = '旧贴'
+    pageRef = '/posts'
+    weight = 20
+[[menus.main]]
+    weight = 30
+    name = '关于'
+    pageRef = '/about'
+    
+# 添加菜单还需再 themes/paper/layouts/partials/header.html 中进行修改，当前只显示前3个选项
+
+[params]
+    # color style
+    color = 'gray'                            # linen, wheat, gray, light
+    disablePostNavigation = false             # disable post navigation
+    monoDarkIcon = true                       # show monochrome dark mode icon
+
+    github = 'treehollowwiki'                 # github.com/YOUR_GITHUB_ID
+    math = true                               # enable KaTeX math typesetting for a specific page
