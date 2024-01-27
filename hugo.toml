@@ -29,3 +29,4 @@ sectionPagesMenu = 'main'
 
     github = 'treehollowwiki'                 # github.com/YOUR_GITHUB_ID
     math = true                               # enable KaTeX math typesetting for a specific page
+    enableRobotsTXT = true                    # 
