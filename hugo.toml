@@ -2,6 +2,7 @@ baseURL = 'https://treehollowwiki.github.io'
 languageCode = 'en-us'
 title = '抒发森林Wiki'
 theme = "paper"
+enableRobotsTXT = true 
 
 
 sectionPagesMenu = 'main'
@@ -29,4 +30,4 @@ sectionPagesMenu = 'main'
 
     github = 'treehollowwiki'                 # github.com/YOUR_GITHUB_ID
     math = true                               # enable KaTeX math typesetting for a specific page
-    enableRobotsTXT = true                    # 
+             
